@@ -1,0 +1,64 @@
+body{
+    height: 300px;
+    width: 400px;
+}
+.form-login {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
+.separator {
+    height: 1px;
+    background-color: black;
+    opacity: 0.5;
+    margin: 0px 10px;
+}
+.menu-special {
+    padding: 2px 10px;
+    cursor: pointer;
+}
+.menu-special:hover{
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    background-color: #0b81c5;
+}
+
+
+/*collage*/
+[data-toggle="collapse"]:after {
+display: inline-block;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  content: "\f054";
+  transform: rotate(90deg) ;
+  transition: all linear 0.25s;
+  float: right;
+  }   
+[data-toggle="collapse"].collapsed:after {
+  transform: rotate(0deg) ;
+}

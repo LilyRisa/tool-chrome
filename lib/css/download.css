@@ -1,0 +1,73 @@
+.btn,
+.btn:hover {
+    text-decoration: none
+}
+.buttonBtnDownloader {
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    line-height: 1.4;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 3px
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc
+}
+.btn-primary {
+    color: #fff;
+    background-color: red;
+    border-color: #00c733;
+    margin-left: 5px
+}
+.btn-primary:hover {
+    background: red !important
+}
+.btn-default:hover {
+    opacity: .9
+}
+.text-bold {
+    font-weight: 700
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee
+}
+.text-right {
+    text-align: right
+}
+.text-center {
+    text-align: center
+}
+.poweredBy {
+    float: left;
+    margin-top: 8px;
+    font-size: 14px
+}
+.txt-no-links {
+    margin-top: 10px
+}
+.linksBtn {
+    float: right
+}
+.clearfix {
+    zoom: 1
+}
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: table
+}
+.clearfix:after {
+    clear: both
+}

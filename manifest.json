@@ -1,0 +1,51 @@
+{
+  "name": "ViewerTool",
+  "version": "1.0",
+  "description": "ViewerTool!",
+  "permissions": [
+  	"storage",
+  	"webRequest",
+    "webRequestBlocking",
+    "downloads",
+  	"notifications",
+  	"declarativeContent",
+  	"cookies",
+  	"activeTab",
+  	"tabs",
+  	"https://*.facebook.com/",
+  	"http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+      "default_popup": "popup.html"
+    },
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/logo_16.png",
+        "32": "images/logo_32.png",
+        "48": "images/logo_48.png",
+        "128": "images/logo_128.png"
+      }
+  },
+  	"icons": {
+        "16": "images/logo_16.png",
+        "32": "images/logo_32.png",
+        "48": "images/logo_48.png",
+        "128": "images/logo_128.png"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://connect.facebook.net; object-src 'self'", 
+    "content_scripts": [ 
+        { 
+        	"all_frames": true,
+            "js": ["content.js","lib/js/jquery-3.4.1.min.js","lib/js/download-fb.js"],
+            "matches": [ "http://*/*", "https://*/*"],
+      		"css": ["lib/css/download.css"]
+         }
+     ],
+  "manifest_version": 2
+}

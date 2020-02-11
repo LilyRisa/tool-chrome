@@ -1,0 +1,109 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf8">
+      <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+      <link rel="stylesheet" href="lib/css/custom.css">
+      <link rel="stylesheet" href="lib/css/loading.css">
+      <link rel="stylesheet" href="lib/css/font-awesome.min.css">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="lib/js/jquery-3.4.1.min.js"></script>
+      <script src="lib/js/bootstrap.min.js"></script>
+      <style>
+        a:hover {
+      color: #0056b3;
+     text-decoration: none; 
+    }
+      </style>
+    </head>
+    <body>
+      <!-- <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> -->
+      <div class='preload-container text-center' id='preload'>
+          <div class='bg'></div>
+          <div class='bg bg2'></div>
+          <div class='bg bg3'></div>
+          <div class='content'>
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
+          </div>
+    </div>
+        
+  </div>
+      <div class="header">
+          <img src="images/logo_transparent.png" style="width:250px; height:100px; object-fit: cover " alt="">
+        </div>
+      <div id="facebook" style="display: none">
+      
+        <div id="separator4" class="separator" style=""></div>
+        <div class="menu-special">
+        <div id="accordion" role="tablist">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  #1 get access token
+                </a>
+              </h5>
+        </div>
+        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                 <button id="accesstoken" class="btn btn-success">Get access token</button>
+                 <input type="text" class="form-control" id="token" style="display: none" >
+                  <div class=""></div>
+              </div>
+        </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                #2 Auto messenge > all friend
+              </a>
+            </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+             <form role="form" class="col-md-9 go-right">
+                      <p>Gửi tin nhắn tới tất cả bạn bè</p>
+                <div class="form-group">
+                <input id="name" id="token" type="text" class="form-control" required>
+                <label for="name">Access token</label>
+              </div>
+              <div class="form-group">
+                <input id="phone" id="mess" type="tel" class="form-control" required>
+                <label for="phone">Messenge</label>
+              </div>
+              <div class="form-group">
+                <textarea id="message" id="log" class="form-control" style="height: 150px" disabled></textarea>
+                <label for="message">log</label>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-success" id="send">send</button>
+              </div>
+              </form>
+            </div>
+      </div>
+      </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Collapsible Group Item #3
+              </a>
+            </h5>
+      </div>
+      <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+             ...............................................................................#3
+            </div>
+      </div>
+      </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    <script src="lib/js/tool.js"></script>
+    </body>
+  </html>
