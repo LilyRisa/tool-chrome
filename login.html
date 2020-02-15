@@ -9,206 +9,188 @@
       <script src="lib/js/jquery-3.4.1.min.js"></script>
       <script src="lib/js/bootstrap.min.js"></script>
       <style>
-       body {
-    padding-top: 90px;
+.register{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    margin-top: 3%;
+    padding: 3%;
 }
-.panel-login {
-  border-color: #ccc;
-  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-}
-.panel-login>.panel-heading {
-  color: #00415d;
-  background-color: #fff;
-  border-color: #fff;
-  text-align:center;
-}
-.panel-login>.panel-heading a{
-  text-decoration: none;
-  color: #666;
-  font-weight: bold;
-  font-size: 15px;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-}
-.panel-login>.panel-heading a.active{
-  color: #029f5b;
-  font-size: 18px;
-}
-.panel-login>.panel-heading hr{
-  margin-top: 10px;
-  margin-bottom: 0px;
-  clear: both;
-  border: 0;
-  height: 1px;
-  background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
-  background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
-  background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
-  background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
-}
-.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
-  height: 45px;
-  border: 1px solid #ddd;
-  font-size: 16px;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-}
-.panel-login input:hover,
-.panel-login input:focus {
-  outline:none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border-color: #ccc;
-}
-.btn-login {
-  background-color: #59B2E0;
-  outline: none;
-  color: #fff;
-  font-size: 14px;
-  height: auto;
-  font-weight: normal;
-  padding: 14px 0;
-  text-transform: uppercase;
-  border-color: #59B2E6;
-}
-.btn-login:hover,
-.btn-login:focus {
-  color: #fff;
-  background-color: #53A3CD;
-  border-color: #53A3CD;
-}
-.forgot-password {
-  text-decoration: underline;
-  color: #888;
-}
-.forgot-password:hover,
-.forgot-password:focus {
-  text-decoration: underline;
-  color: #666;
-}
-
-.btn-register {
-  background-color: #1CB94E;
-  outline: none;
-  color: #fff;
-  font-size: 14px;
-  height: auto;
-  font-weight: normal;
-  padding: 14px 0;
-  text-transform: uppercase;
-  border-color: #1CB94A;
-}
-.btn-register:hover,
-.btn-register:focus {
-  color: #fff;
-  background-color: #1CA347;
-  border-color: #1CA347;
-}
-.navbar-brand-centered {
-    position: absolute;
-    left: 50%;
-    display: block;
+.register-left{
     text-align: center;
-    background-color: transparent;
+    color: #fff;
+    margin-top: 4%;
 }
-.navbar-brand-centered h3{margin:0;margin-left: -30px;margin-top:-2px}
-    .navbar>.container .navbar-brand-centered,
-    .navbar>.container-fluid .navbar-brand-centered {
-        margin-left: -80px;
-    }
-
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-right{
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
 
       </style>
     </head>
     <body>
-      <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header" style="padding-left: 10px">
-      <button type="button" class="btn btn-default navbar-btn pull-left">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </button>
-      <div class="navbar-text navbar-brand-centered"><h3>Khởi tạo dữ liệu user</h3></div>
-    </div>
-  </div>
-</nav>
-     <div class="container">
+
+
+<!------ Include the above in your HEAD tag ---------->
+<div id="forminstall">
+  <div class="container register">
+    <div id="alert" class="alert alert-primary" role="alert">
+  
+</div>
       <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <div class="panel panel-login">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-6">
-                <a href="#" class="active" id="login-form-link">Login</a>
-              </div>
-              <div class="col-xs-6">
-                <a href="#" id="register-form-link">Register</a>
-              </div>
-            </div>
-            <hr>
+          <div class="col-md-3 register-left">
+              <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+              <h3>Welcome</h3>
+              <p>Are you ready!</p>
           </div>
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-lg-12">
-                <form id="login-form" action="#" method="post" role="form" style="display: block;">
-                  <div class="form-group">
-                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-                  </div>
-                  <div class="form-group text-center">
-                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-                    <label for="remember"> Remember Me</label>
-                  </div>
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-sm-6 col-sm-offset-3">
-                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+          <div class="col-md-9 register-right">
+              <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                  <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">register</a>
+                  </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <form id="login">
+                      <h3 class="register-heading">Login server</h3>
+                      <div class="row register-form">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <input type="email" name="email" class="form-control" placeholder="email" value="" />
+                              </div>
+                              
+                              
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <input type="password" name="password" class="form-control" placeholder="Password *" value="" />
+                              </div>
+   
+                              <input type="submit" class="btnRegister" value="Login"/>
+                          </div>
                       </div>
-                    </div>
+                      </form>
                   </div>
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="text-center">
-                          <a href="#" tabindex="5" class="forgot-password">Forgot Password?</a>
-                        </div>
+                  
+                  <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <form id="reg">
+                      <h3  class="register-heading">Register</h3>
+                      <div class="row register-form">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <input type="email" class="form-control" name="email" placeholder="email" value="" />
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <input type="password" class="form-control" name="password" placeholder="Password *" value="" />
+                              </div>
+  
+
+                              <input type="submit" class="btnRegister"  value="Register"/>
+                          </div>
                       </div>
-                    </div>
+                      </form>
                   </div>
-                </form>
-                <form id="register-form" action="#" method="post" role="form" style="display: none;">
-                  <div class="form-group">
-                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
-                  </div>
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-sm-6 col-sm-offset-3">
-                        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
-                      </div>
-                    </div>
-                  </div>
-                </form>
               </div>
-            </div>
           </div>
-        </div>
       </div>
-    </div>
-  </div>
+
+   </div>
+</div>
+<div id="installer" style="display: none">
+  <div class="container">
+    <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Well done!</h4>
+  <p>Bạn đã đăng nhập thành công trên trình duyệt này </p>
+  <hr>
+  <div>Tab sẽ tự đóng trong <div id="time" style="color:red ">00:10s</div></div>
+</div>
+</div>
+</div>
     <script src="lib/js/login-js.js"></script>
     </body>
   </html>
