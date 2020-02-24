@@ -1,6 +1,10 @@
 // you will see this log in console log of current tab in Chrome when the script is injected
 console.log("content_script.js");
 
+function ScreenCaptures(){
+	
+}
+
 chrome.runtime.onMessage.addListener(function(cmd, sender, sendResponse) {
     console.log("chrome.runtime.onMessage: "+cmd);
     switch(cmd) {
