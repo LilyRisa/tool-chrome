@@ -1,0 +1,10 @@
+: hover > .ext_mobile_dl_btn {
+        display: flex
+    }.ext_mobile_dl_btn {
+        position: absolute;z - index: 100;line - height: 1.2;padding: 3 px;display: none;font - weight: 700;transition: all .3 s ease - in -out;opacity: .7;cursor: pointer;border - radius: 14 px;background: #fff;color: #0f0f11!important}.ext_mobile_dl_btn .ext_icon{width:20px;height:20px;display:inline-block;vertical-align:middle;background-position:center;background-repeat:no-repeat;background-size:cover;background-image:url(chrome-extension://__MSG_@@extension_id__/images/img/download.svg)}.ext_mobile_dl_btn .ext_icon.preloader2{background-image:url(chrome-extension://__MSG_@@extension_id__/images/img/preloader2.gif)!important}.ext_mobile_dl_btn:hover{opacity:1}.ext_mobile_dl_btn.profile_mobile_dl_btn{top:5px;left:5px}.ext_mobile_dl_btn.story_mobile_dl_btn{right:50px;bottom:16px;display:flex}.error_dl_msg_mobile{z-index:100;text-align:center;position:fixed;bottom:0;background-color:# 000;opacity: .7;color: #fff;padding: 15 px;width: 100 % ;transition: all .3 s ease - in -out
+    }.storiesToLeft, .storiesToRight {
+        opacity: 0;display: inline - block;background - position: center;background - repeat: no - repeat;background - size: contain;padding: 5 px;width: 15 px;height: 15 px;cursor: pointer
+    }.storiesToLeft {
+        margin - left: 10 px;
+        float: left;
+        background - image: url(chrome - extension: //__MSG_@@extension_id__/images/img/arrow_left_white.png)!important}.storiesToRight{margin-right:10px;float:right;background-image:url(chrome-extension://__MSG_@@extension_id__/images/img/arrow_right_white.png)!important}._jtktu:hover .storiesToLeft{opacity:1}._jtktu:hover .storiesToRight{opacity:1}#react-root>section>div>header{position:relative!important}.VUU41>.iXTil{display:none}

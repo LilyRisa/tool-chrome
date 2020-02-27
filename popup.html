@@ -11,11 +11,18 @@
       <!-- Latest compiled and minified JavaScript -->
       <script src="lib/js/jquery-3.4.1.min.js"></script>
       <script src="lib/js/bootstrap.min.js"></script>
+      <link href="lib/css/popup.css" rel="stylesheet" type="text/css">
       <style>
         a:hover {
-      color: #0056b3;
-     text-decoration: none; 
-    }
+          color: #0056b3;
+          text-decoration: none; 
+        }
+        .morecontent span {
+          display: none;
+        }
+        .morelink {
+              display: block;
+        }
       </style>
     </head>
     <body>
@@ -108,6 +115,134 @@
         </div>
         
       </div>
+    </div>
+    <div class="ytube" style="margin: 10px;">
+      <div id="ytube" style="display: none">
+        <div class="tool">
+            <center>
+                <h5>Download video/audio youtube</h5>
+            </center>
+            <div class="alert alert-info" id="yt-alert">Please open the video to display options</div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                </div>
+                <div class="panel-body " id="ytresult">
+                  <div class="alert alert-info" id="yt-load" style="display: none;  ">
+                      <p class="more"></p>
+                    </div>
+                </div>
+                <div id="linkyt" style="display: none">
+                    
+                    
+                  
+                    <div id="videomp4360p" style="margin-bottom: 10px;">
+                        <div class="form-group" style="">
+                            <a class="btn btn-default btn-type disabled" style="">Video/mp4</a>
+                            <a class="btn btn-default btn-download videomp4136k" id="link" target="_blank" style="" href="#"> Direct | Download</a>
+                            <a class="label label-warning videomp4136kS" id="size" style=""></a>
+                        </div>
+                        <div class="form-group" id="audioz" style="display: none">
+                          <a class="btn btn-default btn-type disabled" style="">Audio/mp4</a>
+                          <a class="btn btn-default btn-download videomp4136k" id="audiolink" target="_blank" style="" href="#"> Direct | Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="ins" style="display: none">
+       <div class="links-no-found">Links no Found</div>
+    <div class="loader"></div>
+    <div class="install_now">
+        <p class="message"></p>
+        <div class="icon_wrap">
+            <span class="ext_icon"></span>
+            <span class="ext_text"></span>
+        </div>
+    </div>
+    <div class="tab_is_not_complete">
+        <div class="text"></div>
+        <div class="loader2"></div>
+    </div>
+    <div class="it_is_not_instagram">
+        <div class="instagram_no_msg"></div>
+        <div class="instagram_link_wrap"><a href="https://instagram.com" target="_blank"></a></div>
+    </div>
+    <header id="header">
+        <div class="logo_wrap">
+            <span id="logo"></span>
+        </div>
+        <div class="settings_btn_wrap">
+            <img class="settings_btn_icon">
+        </div>
+        <div class="upload_wrap">
+            <span class="upload_icon"></span>
+        </div>
+        <div class="phone_wrap">
+            <span class="phone_icon"></span>
+        </div>
+        <div class="feedback_wrap">
+            <span id="rating-ask">
+                <span class="ext_text"></span>
+                <span class="stars">
+                    <a class="star" data-pos="1">
+                        <span class="empty"></span>
+                        <span class="filled"></span>
+                    </a>
+                    <a class="star" data-pos="2">
+                        <span class="empty"></span>
+                        <span class="filled"></span>
+                    </a>
+                    <a class="star" data-pos="3">
+                        <span class="empty"></span>
+                        <span class="filled"></span>
+                    </a>
+                    <a class="star" data-pos="4">
+                        <span class="empty"></span>
+                        <span class="filled"></span>
+                    </a>
+                    <a class="star" data-pos="5">
+                        <span class="empty"></span>
+                        <span class="filled"></span>
+                    </a>
+                </span>
+            </span>
+            <span class="report_ask"><span class="ext_text"></span><span class="icon"></span></span>
+        </div>
+        <div style="clear: both;"></div>
+    </header>
+    <div class="comment-wrapper">
+        <label> <textarea rows="5" cols="600" maxlength="800"></textarea></label>
+        <div class="email_wrap">
+            <input id="email_input" type="email" name="email">
+            <div class="not_valid_email"></div>
+        </div>
+        <button class="comment_btn send_btn"></button>
+        <button class="comment_btn cancel_btn"></button>
+        <div class="symbols_left"><span class="text"></span><span class="count"></span></div>
+    </div>
+    <div id="download_item_container"></div>
+    <div class="settings_page_wrap">
+        <div class="btn_back"></div>
+        <div class="settings_title"></div>
+        <div class="settings_container">
+            <div class="settings_item upload_from_anywhere">
+                <span class="title"></span>
+                <span class="title-help"><span class="img-icon"></span></span>
+                <div class="push-toggle selector">
+                    <div class="point"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="lib/js/jquery.js">
+    </script>
+    <script src="lib/js/globalUtils.js">
+    </script>
+    <script src="lib/js/popup.js">
+    </script>
+
     </div>
     <script src="lib/js/tool.js"></script>
     </body>

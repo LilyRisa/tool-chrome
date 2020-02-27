@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stories</title>
+    <link href="lib/css/photoswipe.css" rel="stylesheet" type="text/css">
+    <link href="lib/css/photoswipe-default-skin.css" rel="stylesheet" type="text/css">
+    <link href="lib/css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+    <link href="lib/css/content.css" rel="stylesheet" type="text/css">
+    <link href="lib/css/stories.css" rel="stylesheet" type="text/css">
+    <style>
+        .error_story_not_found{
+            display: none;
+            margin-top: 20%;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="error_story_not_found"></div>
+<div class="unauthorized_msg">
+    <div class="text"></div>
+    <div class="link"><a href="https://www.instagram.com/accounts/login/" target="_blank"></a></div>
+</div>
+<div class="up_to_top_button"></div>
+<div class="page_wrap">
+    <div class="rate_wrapper">
+        <div id="logo"></div>
+        <div class="feedback_wrap">
+				<span id="rating-ask">
+					<span class="ext_text"></span>
+					<br>
+					<span class="stars">
+						<a class="star" data-pos="1">
+							<span class="empty"></span>
+							<span class="filled"></span>
+						</a>
+						 <a class="star" data-pos="2">
+						   <span class="empty"></span>
+							<span class="filled"></span>
+						</a>
+						 <a class="star" data-pos="3">
+							<span class="empty"></span>
+							<span class="filled"></span>
+						</a>
+						 <a class="star" data-pos="4">
+						   <span class="empty"></span>
+							<span class="filled"></span>
+						</a>
+						 <a class="star" data-pos="5">
+							<span class="empty"></span>
+							<span class="filled"></span>
+						</a>
+					</span>
+				</span>
+        </div>
+    </div>
+    <div class="page_container">
+        <div id="nav">
+            <div class="nav_item" data-nav_name="friends">
+                <div class="nav_item_wrap">
+                    <span class="text"></span><span class="icon"></span></div>
+                </div>
+            <!--<div class="nav_item" data-nav_name="top_lives">-->
+                <!--<div class="nav_item_wrap">-->
+                <!--<span class="text"></span><span class="icon"></span></div>-->
+            <!--</div>-->
+            <div class="nav_item" data-nav_name="locations">
+                <div class="nav_item_wrap">
+                <span class="text"></span><span class="icon"></span></div>
+                </div>
+            <div class="nav_item" data-nav_name="search">
+                <div class="nav_item_wrap">
+                <span class="text"></span><span class="icon"></span></div>
+            </div>
+        </div>
+        <div class="content_container">
+            <div id="friends">
+                <div class="name_filter">
+                    <input type="text" name="name_filter_input">
+                </div>
+                <div class="content_list"></div>
+            </div>
+            <div id="top_lives">
+                <div class="content_list"></div>
+            </div>
+            <div id="locations">
+                <div class="name_filter">
+                    <input type="text" name="name_filter_input">
+                </div>
+                <div class="content_list"></div>
+            </div>
+            <div id="search">
+                <div class="search_input_wrap">
+                    <input type="text" name="search_input">
+                </div>
+                <div class="search_btns_wrap">
+                    <button class="search_button" id="search_users"></button>
+                    <button class="search_button" id="search_tags"></button>
+                    <button class="search_button" id="search_places"></button>
+                </div>
+                <div class="content_list"></div>
+            </div>
+        </div>
+        <div class="nav_update_loader"></div>
+    </div>
+</div>
+
+
+<script src="lib/js/jquery.js"></script>
+<script src="lib/js/photoswipe.js"></script>
+<script src="lib/js/photoswipe-ui-default.js"></script>
+<script src="lib/js/dash.all.min.js"></script>
+<script src="lib/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="lib/js/perfect-scrollbar.min.js"></script>
+<script src="lib/js/jszip.min.js"></script>
+<script src="lib/js/FileSaver.js"></script>
+<script src="lib/js/jszip_utils.js"></script>
+
+<script src="lib/js/globalUtils.js"></script>
+<script src="lib/js/countryList.js"></script>
+<script src="lib/js/stories.js"></script>
+</body>
+</html>

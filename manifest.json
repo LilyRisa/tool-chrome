@@ -15,13 +15,14 @@
   	"tabs",
   	"https://*.facebook.com/",
   	"http://*/*",
-    "https://*/*"
+    "https://*/*",
+    "management"
   ],
   "browser_action": {
       "default_popup": "popup.html"
     },
   "background": {
-      "scripts": ["background.js"],
+      "scripts": ["background.js","lib/js/background.js"],
       "persistent": true
     },
     "browser_action": {
@@ -42,11 +43,46 @@
     "content_security_policy": "script-src 'self' 'unsafe-eval' https://connect.facebook.net; object-src 'self'", 
     "content_scripts": [ 
         { 
+          "matches": [
+                "*://*.instagram.com/*"
+            ],
         	"all_frames": true,
-            "js": ["content.js","lib/js/jquery-3.4.1.min.js","lib/js/download-fb.js"],
+          "run_at": "document_start",
+            "js": [
+              "content.js",
+              "lib/js/jquery.js",
+              "lib/js/jquery-3.4.1.min.js",
+              "lib/js/download-fb.js",
+              "lib/js/photoswipe.js",
+              "lib/js/photoswipe-ui-default.js",
+              "lib/js/jquery-ui-1.10.3.custom.min.js",
+              "lib/js/jquery.mousewheel.min.js",
+              "lib/js/jquery.kinetic.min.js",
+              "lib/js/jquery.smoothdivscroll-1.3-min.js",
+              "lib/js/jszip.min.js",
+              "lib/js/FileSaver.js",
+              "lib/js/jszip_utils.js",
+              "lib/js/perfect-scrollbar.jquery.min.js",
+              "lib/js/perfect-scrollbar.min.js",
+              "lib/js/croppie.min.js",
+              "lib/js/globalUtils.js",
+              "lib/js/instagram_com.js"
+            ],
             "matches": [ "http://*/*", "https://*/*"],
-      		"css": ["lib/css/download.css"]
+      		"css": [
+            "lib/css/download.css",
+            "lib/css/content.css",
+            "lib/css/content-mobile.css",
+            "lib/css/photoswipe.css",
+            "lib/css/photoswipe-default-skin.css",
+            "lib/css/croppie.css",
+            "lib/css/perfect-scrollbar.min.css"
+          ]
          }
      ],
+    "web_accessible_resources": [
+        "lib/css/*",
+        "images/img/*"
+    ],
   "manifest_version": 2
 }

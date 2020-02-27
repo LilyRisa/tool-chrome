@@ -1,0 +1,520 @@
+body {
+	max-height: 500px;
+	background-color: #fff;
+	width: auto;
+	margin: 0;
+	transition: all .3s ease-in-out
+}
+
+.loader {
+	display: none;
+	padding: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/preloader2.gif)
+}
+
+header#header {
+	position: relative;
+	display: none;
+	padding: 8px
+}
+
+header#header .logo_wrap {
+	width: 35%;
+	float: left
+}
+
+header#header .logo_wrap #logo {
+	width: 212px;
+	height: 16px;
+	display: inline-block;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/logo.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain
+}
+
+header#header .upload_wrap {
+	display: none;
+	float: left;
+	margin-left: 10px;
+	width: 5%
+}
+
+header#header .upload_wrap .upload_icon {
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/upload.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 12px;
+	cursor: pointer
+}
+
+header#header .settings_btn_wrap {
+	display: none;
+	float: left;
+	margin-left: 15px;
+	width: 5%
+}
+
+header#header .settings_btn_wrap .settings_btn_icon {
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	width: 20px;
+	opacity: .8
+}
+
+header#header .settings_btn_wrap .settings_btn_icon:hover {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	opacity: 1
+}
+
+header#header .phone_wrap {
+	display: none;
+	float: left;
+	margin-left: 10px;
+	width: 5%
+}
+
+header#header .phone_wrap .phone_icon {
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/phone_min.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 12px;
+	cursor: pointer
+}
+
+header#header .feedback_wrap {
+	width: 50%;
+	float: right;
+	text-align: right
+}
+
+header#header .feedback_wrap #rating-ask {
+	display: none;
+	margin-right: 10px;
+	text-align: right;
+	white-space: nowrap
+}
+
+header#header .feedback_wrap #rating-ask a {
+	cursor: pointer;
+	text-decoration: none
+}
+
+header#header .feedback_wrap #rating-ask .stars .star {
+	padding: 5px 0;
+	transition: all .3s ease-in-out
+}
+
+header#header .feedback_wrap #rating-ask .stars .star span {
+	padding: 8px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain
+}
+
+header#header .feedback_wrap #rating-ask .stars .star .empty {
+	display: inline;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/_star-0.svg)
+}
+
+header#header .feedback_wrap #rating-ask .stars .star .filled {
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/_star-1.svg);
+	display: none
+}
+
+header#header .feedback_wrap .report_ask {
+	display: inline-block
+}
+
+header#header .feedback_wrap .report_ask .icon {
+	cursor: pointer;
+	padding: 12px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/report.svg)
+}
+
+header#header .feedback_wrap .ext_text {
+	font-size: 13px;
+	font-weight: 100;
+	color: #3897F0;
+	opacity: .8;
+	cursor: default;
+	margin-right: 7px
+}
+
+.comment-wrapper {
+	display: none;
+	visibility: hidden;
+	border-radius: 3px;
+	padding: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 1s, visibility 1s;
+	transition: opacity 1s, visibility 1s;
+	background-color: #EEF7FE;
+	margin: 0;
+	margin-bottom: 5px
+}
+
+.comment-wrapper textarea {
+	padding: 5px;
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #A1CFF1;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 12px;
+	resize: none
+}
+
+.comment-wrapper textarea:focus {
+	outline: 0
+}
+
+.comment-wrapper .email_wrap {
+	position: relative;
+	padding: 5px 0;
+	margin-bottom: 8px
+}
+
+.comment-wrapper .email_wrap #email_input {
+	padding: 6px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #A1CFF1;
+	width: 100%;
+	font-size: 12px
+}
+
+.comment-wrapper .email_wrap #email_input:focus {
+	outline: 0
+}
+
+.comment-wrapper .email_wrap #email_input.error {
+	border-color: red
+}
+
+.comment-wrapper .email_wrap .not_valid_email {
+	display: none;
+	position: absolute;
+	right: 11px;
+	top: 8px;
+	font-size: 11px;
+	padding: 4px;
+	color: red
+}
+
+.comment-wrapper .symbols_left {
+	display: none;
+	font-weight: 400;
+	float: right
+}
+
+.comment-wrapper .symbols_left .count {
+	margin-left: 10px
+}
+
+.comment-wrapper .comment_btn {
+	padding: 8px;
+	width: 100px;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 5px;
+	font-size: 12px;
+	margin-right: 10px;
+	border: 0;
+	font-weight: 100
+}
+
+.comment-wrapper .comment_btn:focus {
+	outline: 0
+}
+
+.comment-wrapper .comment_btn.send_btn {
+	background-color: #2E99E9;
+	box-shadow: 0 3px 0 0 #9FD4FB
+}
+
+.comment-wrapper .comment_btn.cancel_btn {
+	background-color: #3C4B56;
+	box-shadow: 0 3px 0 0 #A3B9C9
+}
+
+#download_item_container {
+	text-align: justify;
+	transition: all 1s ease-in-out
+}
+
+#download_item_container .download_item {
+	position: relative;
+	margin: 1px;
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer
+}
+
+#download_item_container .download_item.mini_size {
+	width: 150px;
+	height: 150px
+}
+
+#download_item_container .download_item.medium_size {
+	width: 200px;
+	height: 200px
+}
+
+#download_item_container .download_item.big_size {
+	width: 300px;
+	height: 300px
+}
+
+#download_item_container .download_item:hover .download_item_overlay {
+	opacity: .5
+}
+
+#download_item_container .download_item:hover .download_item_icon {
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/download_big.png);
+	opacity: 1
+}
+
+#download_item_container .download_item:hover .download_item_icon.clicked_now_item {
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/preloader2.gif)
+}
+
+#download_item_container .download_item .download_item_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: #0f0f11;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: all .2s ease-in-out;
+	z-index: 2
+}
+
+#download_item_container .download_item .download_item_icon {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: all .2s ease-in-out;
+	background-size: 40%;
+	z-index: 3
+}
+
+#download_item_container .download_item .download_item_icon.clicked_now_item {
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/preloader2.gif)
+}
+
+#download_item_container .download_item.video .download_item_icon,
+#download_item_container .download_item.igtv .download_item_icon {
+	opacity: 1;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/ig_video_icon_white.png)
+}
+
+#download_item_container .download_item.video:hover .download_item_icon,
+#download_item_container .download_item.igtv:hover .download_item_icon {
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/download_big.png)
+}
+
+#download_item_container .download_item.video:hover .download_item_icon.clicked_now_item,
+#download_item_container .download_item.igtv:hover .download_item_icon.clicked_now_item {
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/preloader2.gif)
+}
+
+.links-no-found {
+	display: none;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+	font-size: 1.2em
+}
+
+.install_now {
+	display: none;
+	width: 250px;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer
+}
+
+.install_now .icon_wrap {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	color: #3897f0
+}
+
+.install_now .icon_wrap span.ext_icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	background: url(chrome-extension://__MSG_@@extension_id__/images/img/reload.svg)!important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain!important
+}
+
+.it_is_not_instagram {
+	display: none;
+	width: 250px;
+	text-align: center;
+	padding: 20px;
+	margin: 10px 0
+}
+
+.instagram_no_msg {
+	font-size: 1.1em;
+	display: block;
+	margin-bottom: 20px;
+	color: dimgrey
+}
+
+.instagram_link_wrap a {
+	font-size: 1.2em;
+	color: cornflowerblue;
+	text-decoration: none
+}
+
+.instagram_link_wrap a:hover {
+	color: royalblue
+}
+
+.tab_is_not_complete {
+	display: none;
+	width: 250px;
+	text-align: center;
+	padding: 20px;
+	margin: 10px 0
+}
+
+.tab_is_not_complete .text {
+	font-size: 1.2em
+}
+
+.settings_page_wrap {
+	display: none;
+	height: 400px;
+	padding: 10px;
+	position: relative
+}
+
+.settings_page_wrap .settings_title {
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	padding-bottom: 20px
+}
+
+.settings_page_wrap .settings_container {
+	text-align: center
+}
+
+.settings_page_wrap .settings_container .settings_item {
+	display: inline-block;
+	padding: 15px
+}
+
+.settings_page_wrap .settings_container .settings_item .title {
+	font-size: 12px
+}
+
+.settings_page_wrap .settings_container .settings_item .title-help {
+	width: 30px;
+	position: relative;
+	display: inline-block
+}
+
+.settings_page_wrap .settings_container .settings_item .title-help .img-icon {
+	position: absolute;
+	top: -20px;
+	left: 0;
+	cursor: help;
+	display: inline-block;
+	padding: 10px;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/quest.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.settings_page_wrap .settings_container .settings_item .push-toggle {
+	display: inline-block;
+	width: 45px;
+	height: 20px;
+	padding: 2px;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: -4px 8px 0 8px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	background: gainsboro;
+	border: 1px solid gainsboro
+}
+
+.settings_page_wrap .settings_container .settings_item .push-toggle .point {
+	opacity: .8;
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border-radius: 100%;
+	border: 1px solid #fff;
+	transition: all ease-out .2s
+}
+
+.settings_page_wrap .settings_container .settings_item.active {
+	background-color: #fff
+}
+
+.settings_page_wrap .settings_container .settings_item.active .title {
+	color: #000
+}
+
+.settings_page_wrap .settings_container .settings_item.active .push-toggle {
+	background: #5f98d8;
+	border: 1px solid #5f98d8
+}
+
+.settings_page_wrap .settings_container .settings_item.active .push-toggle .point {
+	margin-left: 25px;
+	opacity: 1
+}
+
+.settings_page_wrap .btn_back {
+	position: absolute;
+	padding: 10px;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/img/arrow_left.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer
+}
+
+.help_image_wrap {
+	position: absolute;
+	top: 100px;
+	padding: 20px
+}
+
+.help_image_wrap img {
+	max-height: 100%;
+	max-width: 100%
+}
